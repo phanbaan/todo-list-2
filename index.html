@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todolist1</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="todo">
+        <!--   start todo-header  -->
+        <div class="todo-header">
+          <div class="todo-header__title">
+            <h3>THINGS TO DO</h3>
+          </div>
+          <div class="todo-header__btn-add">
+            <a href="#e" onclick="add_new()"
+              ><img src="./img/plus.png" alt="" width="20" height="20" />
+            </a>
+          </div>
+        </div>
+        <!--   End todo-header  -->
+        <div class="todo_new">
+          <table class="todo__table">
+            <tr>
+              <th>Category</th>
+              <th>Title</th>
+              <th>Date</th>
+            </tr>
+            <tr>
+              <td>
+                <select name="" id="action_select">
+                  <option value="MARKETING">MARKETING</option>
+                  <option value="DESIGN">DESIGN</option>
+                  <option value="DEVELOPMENT">DEVELOPMENT</option>
+                  <option value="MANAGEMENT">MANAGEMENT</option>
+                </select>
+              </td>
+              <!-- End td 1 -->
+              <td>
+                <input type="text" class="input_title_desc" />
+              </td>
+              <!-- End td 2 -->
+              <td>
+                <select
+                  name=""
+                  class="input_description_title"
+                  id="date_select"
+                >
+                  <option value="TODAY">TODAY</option>
+                  <option value="TOMORROW">TOMORROW</option>
+                </select>
+
+                <!-- End td 3 -->
+              </td>
+            </tr>
+            <tr>
+              <th class="titl_description">Description</th>
+            </tr>
+            <tr>
+              <td colspan="3">
+                <input type="text" class="input_description" required />
+              </td>
+            </tr>
+            <tr>
+              <td colspan="3">
+                <button class="btn__add" onclick="addToList()">ADD</button>
+              </td>
+            </tr>
+          </table>
+          <!--   End cont_crear_new  -->
+        </div>
+        <!--   start_todo list  -->
+        <div class="todo_lists">
+          <ul>
+            <li class="todo__marketing list__item">
+              <div class="todo__category">
+                <p>SHOPPIGN</p>
+              </div>
+              <div class="todo__content">
+                <h4>BUY COFFEE BEANS</h4>
+                <p>DODIDONE COFFEE STORE</p>
+              </div>
+              <div class="todo__time">
+                <div class="todo__date">
+                  <p>TODAY</p>
+                </div>
+                <div class="todo__check">
+                  <ul>
+                    <li>
+                      <a href="#" onclick="removeItem();"
+                        ><img
+                          src="./img/check.png"
+                          width="20"
+                          height="15"
+                          alt=""
+                      /></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <!-- <li class="list_work"></li>
+              <li class="list_sport"></li>
+          <li class="list_music"></li>
+           -->
+          </ul>
+          <!--   End cont_todo_list_top  -->
+        </div>
+        <!--   End cont_central  -->
+      </div>
+    </div>
+    <script src="./main.js"></script>
+  </body>
+</html>
