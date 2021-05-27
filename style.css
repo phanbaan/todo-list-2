@@ -145,7 +145,6 @@ body {
   -ms-transform: scale(1);
   -o-transform: scale(1);
   transform: scale(1);
-  height: 0px;
   margin: 10px 0px;
   height: 190px;
 }
@@ -155,7 +154,7 @@ body {
   -o-transition: all 0.2s;
   transition: all 0.2s;
 }
-.todo-header__btn-active:hover > a > img {
+.todo-header__btn-active > a > img {
   -webkit-transform: rotate(130deg);
   -ms-transform: rotate(130deg);
   -o-transform: rotate(130deg);
